@@ -12,9 +12,22 @@ public class EJ_5_guia2 {
 
     /**
      * @param args the command line arguments
+     *  Escribir un programa que lea un número entero por teclado
+     * y muestre por pantalla el doble,
+     * el triple 
+     * y la raíz cuadrada de ese número.
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       int numero;
+        
+        Scanner strNum = new Scanner(System.in);
+        
+        System.out.println("ingrese un numero:");
+        numero = strNum.nextInt();
+        
+        System.out.println("El doble de "+numero+" es:"+numero*2);
+        System.out.println("El triple de "+numero+" es:"+numero*3);
+        System.out.println("La raiz de "+numero+" es:"+Math.sqrt(numero));
     }
     
 }
